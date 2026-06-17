@@ -11,7 +11,7 @@ const recommendations = {
                 "Helps improve sleep quality",
                 "Optimized overnight release"
             ],
-            image: "images/2.jpg",
+            image: "/images/2.jpg",
             url: "https://mavely.app.link/g8aLeVmDZ3b"
         },
         {
@@ -22,7 +22,7 @@ const recommendations = {
                 "Helps support nervous system balance",
                 "Supports energy metabolism"
             ],
-            image: "images/3.jpg",
+            image: "/images/3.jpg",
             url: "https://mavely.app.link/DKtIIYrDZ3b"
         },
         {
@@ -33,7 +33,7 @@ const recommendations = {
                 "Supports faster sleep onset",
                 "Encourages deeper, restorative sleep"
             ],
-            image: "images/4.jpg",
+            image: "/images/4.jpg",
             url: "https://mavely.app.link/ixVXREvDZ3b"
         }
     ],
@@ -47,7 +47,7 @@ const recommendations = {
                 "Helps support memory",
                 "Supports cognitive performance"
             ],
-            image: "images/5.jpg",
+            image: "/images/5.jpg",
             url: "https://mavely.app.link/4VVvE4BDZ3b"
         },
         {
@@ -58,7 +58,7 @@ const recommendations = {
                 "Helps support concentration",
                 "Supports daily cognitive performance"
             ],
-            image: "images/6.jpg",
+            image: "/images/6.jpg",
             url: "https://mavely.app.link/Oz9Zs7PDZ3b"
         }
     ],
@@ -72,7 +72,7 @@ const recommendations = {
                 "Provides antioxidant support",
                 "Supports overall wellness"
             ],
-            image: "images/7.jpg",
+            image: "/images/7.jpg",
             url: "https://mavely.app.link/retVBm4DZ3b"
         },
         {
@@ -83,7 +83,7 @@ const recommendations = {
                 "Supports recovery",
                 "Helps support stress resilience"
             ],
-            image: "images/8.jpg",
+            image: "/images/8.jpg",
             url: "https://mavely.app.link/ReHt9i6DZ3b"
         },
         {
@@ -94,7 +94,7 @@ const recommendations = {
                 "Supports brain function",
                 "Supports healthy inflammation balance"
             ],
-            image: "images/9.jpg",
+            image: "/images/9.jpg",
             url: "https://mavely.app.link/mxTUUD8DZ3b"
         }
     ],
@@ -108,7 +108,7 @@ const recommendations = {
                 "Supports calm focus",
                 "Helps support mood balance"
             ],
-            image: "images/10.jpg",
+            image: "/images/10.jpg",
             url: "https://mavely.app.link/U8WMLDdEZ3b"
         },
         {
@@ -119,7 +119,7 @@ const recommendations = {
                 "Supports resilience and recovery",
                 "Supports healthy aging"
             ],
-            image: "images/11.jpg",
+            image: "/images/11.jpg",
             url: "https://mavely.app.link/AU7uFmNYZ3b"
         }
     ],
@@ -133,7 +133,7 @@ const recommendations = {
                 "Supports strength and performance",
                 "Supports workout recovery"
             ],
-            image: "images/12.jpg",
+            image: "/images/12.jpg",
             url: "https://mavely.app.link/tMUOusSEZ3b"
         },
         {
@@ -144,7 +144,7 @@ const recommendations = {
                 "Supports body composition",
                 "Supports lean tone"
             ],
-            image: "images/13.jpg",
+            image: "/images/13.jpg",
             url: "https://mavely.app.link/p3ZPNyUEZ3b"
         },
         {
@@ -155,7 +155,7 @@ const recommendations = {
                 "Supports relaxation",
                 "Supports performance"
             ],
-            image: "images/14.jpg",
+            image: "/images/14.jpg",
             url: "https://mavely.app.link/JbEAGfWEZ3b"
         }
     ],
@@ -169,7 +169,7 @@ const recommendations = {
                 "Supports healthy aging",
                 "Supports energy and vitality"
             ],
-            image: "images/15.jpg",
+            image: "/images/15.jpg",
             url: "https://mavely.app.link/AU7uFmNYZ3b"
         },
         {
@@ -180,7 +180,7 @@ const recommendations = {
                 "Supports cognitive health",
                 "Supports healthy inflammation balance"
             ],
-            image: "images/16.jpg",
+            image: "/images/16.jpg",
             url: "https://mavely.app.link/mxTUUD8DZ3b"
         }
     ],
@@ -194,7 +194,7 @@ const recommendations = {
                 "Supports body composition",
                 "Supports healthy weight management"
             ],
-            image: "images/13.jpg",
+            image: "/images/13.jpg",
             url: "https://mavely.app.link/p3ZPNyUEZ3b"
         },
         {
@@ -205,7 +205,7 @@ const recommendations = {
                 "Supports digestion and wellness",
                 "Provides antioxidant support"
             ],
-            image: "images/7.jpg",
+            image: "/images/7.jpg",
             url: "https://mavely.app.link/retVBm4DZ3b"
         },
         {
@@ -216,7 +216,7 @@ const recommendations = {
                 "Supports healthy inflammation balance",
                 "Supports overall wellness"
             ],
-            image: "images/9.jpg",
+            image: "/images/9.jpg",
             url: "https://mavely.app.link/mxTUUD8DZ3b"
         }
     ],
@@ -230,7 +230,7 @@ const recommendations = {
                 "Supports energy and vitality",
                 "Supports overall wellness"
             ],
-            image: "images/17.jpg",
+            image: "/images/17.jpg",
             url: "https://mavely.app.link/MLYD5e9NZ3b"
         }
     ],
@@ -244,7 +244,7 @@ const recommendations = {
                 "Supports daily wellness",
                 "Supports energy and vitality"
             ],
-            image: "images/18.jpg",
+            image: "/images/18.jpg",
             url: "https://mavely.app.link/DqqvbjcOZ3b"
         }
     ],
@@ -258,7 +258,7 @@ const recommendations = {
                 "Supports immune health",
                 "Supports daily wellness"
             ],
-            image: "images/19.jpg",
+            image: "/images/19.jpg",
             url: "https://mavely.app.link/6VxeYBfOZ3b"
         },
         {
@@ -269,7 +269,7 @@ const recommendations = {
                 "Supports brain health",
                 "Supports healthy inflammation balance"
             ],
-            image: "images/9.jpg",
+            image: "/images/9.jpg",
             url: "https://mavely.app.link/mxTUUD8DZ3b"
         },
         {
@@ -280,7 +280,7 @@ const recommendations = {
                 "Provides antioxidant support",
                 "Supports overall wellness"
             ],
-            image: "images/7.jpg",
+            image: "/images/7.jpg",
             url: "https://mavely.app.link/retVBm4DZ3b"
         }
     ]
