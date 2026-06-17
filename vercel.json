@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff2?|ttf|eot))",
@@ -11,15 +9,6 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
   ]
 }
