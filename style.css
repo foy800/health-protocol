@@ -1535,7 +1535,7 @@ body {
 .home-main {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 34px 24px 72px;
+    padding: 56px 24px 72px;
 }
 
 .home-hero {
@@ -1543,8 +1543,8 @@ body {
     grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
     gap: 48px;
     align-items: center;
-    min-height: calc(100vh - 150px);
-    padding: 34px 0 58px;
+    min-height: auto;
+    padding: 48px 0 58px;
 }
 
 .home-kicker,
@@ -1582,47 +1582,6 @@ body {
     line-height: 1.7;
     color: var(--secondary-color);
     margin-bottom: 28px;
-}
-
-.home-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-.home-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 54px;
-    padding: 0 22px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.98rem;
-    transition: var(--transition);
-}
-
-.home-button-primary {
-    color: #fff;
-    background: var(--primary-color);
-    box-shadow: 0 12px 26px rgba(26, 43, 44, 0.15);
-}
-
-.home-button-primary:hover {
-    background: var(--button-hover);
-    transform: translateY(-2px);
-}
-
-.home-button-secondary {
-    color: var(--primary-color);
-    background: rgba(255, 255, 255, 0.65);
-    border: 1px solid rgba(26, 43, 44, 0.12);
-}
-
-.home-button-secondary:hover {
-    background: #fff;
-    transform: translateY(-2px);
 }
 
 .home-hero-media {
@@ -1766,8 +1725,7 @@ body {
     }
 
     .home-hero {
-        min-height: auto;
-        padding-top: 16px;
+        padding-top: 24px;
     }
 }
 
@@ -1782,7 +1740,7 @@ body {
     }
 
     .home-main {
-        padding: 24px 18px 60px;
+        padding: 32px 18px 60px;
     }
 
     .home-hero h1 {
