@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procenko Nutrition Advisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+</head>
+<body>
+    <div class="announcement-bar">
+        <span class="announcement-text">Personalized supplement recommendations in under 60 seconds</span>
+    </div>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="logo" href="/">
+                <img src="/images/logo.png" alt="Procenko Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <button id="nav-cta" class="nav-cta-btn">Take the Quiz</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">100% Science-Backed & Personalized</div>
+                    <h1>Stop Guessing Which Supplements To Take.</h1>
+                    <p class="subheadline">Get a personalized daily supplement plan built around your unique goals, age, and lifestyle. Answer a few simple questions and discover what your body actually needs.</p>
+
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="trust-icon">+</span>
+                            <span class="trust-label">Personalized Recommendations</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">+</span>
+                            <span class="trust-label">Science-Based Approach</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">+</span>
+                            <span class="trust-label">Takes Less Than 60 Seconds</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">+</span>
+                            <span class="trust-label">Free Assessment</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-group">
+                        <button id="start-assessment" class="cta-button">Get My Personalized Plan</button>
+                        <p class="secondary-text">Join thousands of adults building healthier daily routines.</p>
+                    </div>
+
+                    <div class="social-proof">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text"><strong>4.8/5</strong> Average User Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="/images/1.png" alt="Supplements" class="hero-img">
+                    <div class="floating-card card-1">
+                        <span class="floating-icon">Pure</span>
+                        <div class="floating-info">
+                            <span class="floating-title">Pure Ingredients</span>
+                            <span class="floating-desc">Third-party tested</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="floating-icon">Smart</span>
+                        <div class="floating-info">
+                            <span class="floating-title">Smart Formula</span>
+                            <span class="floating-desc">Tailored to your DNA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-header">
+                <span class="section-subtitle">Simple & Effective</span>
+                <h2>How It Works</h2>
+                <p class="section-desc">Get your personalized supplement routine in four easy steps.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Answer 5 Quick Questions</h3>
+                    <p>Tell us about your goals, lifestyle, and wellness priorities.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>We Analyze Your Answers</h3>
+                    <p>Our recommendation engine matches products to your needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Unlock Your Personalized Plan</h3>
+                    <p>Get recommendations tailored to your profile.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Start Building Better Habits</h3>
+                    <p>Create a supplement routine designed around your goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz hidden">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <button id="quiz-back" class="quiz-back-btn">Back</button>
+                    <div class="quiz-progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <span id="progress-text" class="progress-text">Question 1 of 5</span>
+                    </div>
+                </div>
+                <div class="quiz-container" id="quiz-container"></div>
+            </div>
+        </section>
+
+        <section id="loading" class="loading hidden">
+            <div class="loading-card">
+                <div class="spinner-container">
+                    <div class="spinner"></div>
+                    <div class="spinner-inner">NP</div>
+                </div>
+                <h2 id="loading-title">Analyzing your answers...</h2>
+                <p id="loading-subtitle">Our recommendation engine is matching products to your profile.</p>
+                <div class="loading-progress-bar">
+                    <div class="loading-progress" id="loading-progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="email-capture" class="email-capture hidden">
+            <div class="email-card">
+                <div class="email-header">
+                    <div class="badge">Almost There!</div>
+                    <h2>Send me my personalized guide</h2>
+                    <p class="email-subtitle">Enter your email to receive your custom supplement protocol + bonus wellness tips. We respect your privacy.</p>
+                </div>
+
+                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+                <form action="https://app.kit.com/forms/9567167/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9567167" data-uid="d2ef95bc13" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}' onsubmit="setTimeout(() => { if (typeof window.showRecommendationsAfterSubscribe === 'function') { setTimeout(window.showRecommendationsAfterSubscribe, 800); } }, 1200)" min-width="400 500 600 700 800" style="background-color: rgb(255, 255, 255); border-radius: 16px; box-shadow: 0 10px 30px rgba(26,43,44,0.1);">
+                    <div data-style="full">
+                        <div data-element="column" class="formkit-column">
+                            <div class="formkit-header" data-element="header" style="color: rgb(26, 43, 44); font-size: 28px; font-weight: 700; margin-bottom: 8px;">
+                                <h2>Find Your Perfect Supplement Stack</h2>
+                            </div>
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="your@email.com" required="" type="email" style="color: rgb(26, 43, 44); border-color: #EAE5DF; font-weight: 400; padding: 16px 20px; font-size: 16px; border-radius: 12px;">
+                                </div>
+                                <button data-element="submit" class="formkit-submit" style="color: rgb(255, 255, 255); background-color: #1A2B2C; border-radius: 12px; font-weight: 700; padding: 16px 32px; font-size: 17px; margin-top: 8px;">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span>Send me the guide</span>
+                                </button>
+                            </div>
+                            <div class="formkit-disclaimer" data-element="disclaimer" style="color: #5A6E72; font-size: 13px; margin-top: 16px;">
+                                We respect your privacy. Unsubscribe at anytime.
+                            </div>
+                            <div class="formkit-powered-by-convertkit-container">
+                                <a href="https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic" data-element="powered-by" class="formkit-powered-by-convertkit" data-variant="dark" target="_blank" rel="nofollow noopener">Built with Kit</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="results" class="results hidden">
+            <div class="results-header">
+                <div class="badge">Your Custom Protocol</div>
+                <h2>Your Personalized Supplement Plan</h2>
+                <p class="results-subtitle">Based on your answers, these recommendations may help support your goals and daily wellness routine.</p>
+            </div>
+
+            <div class="results-layout">
+                <div class="results-sidebar">
+                    <div class="profile-summary-card">
+                        <h3>Your Wellness Profile</h3>
+                        <div class="profile-items" id="profile-summary-items"></div>
+                    </div>
+                </div>
+
+                <div class="results-content">
+                    <div class="plan">
+                        <section id="foundation-section" class="plan-section hidden" aria-label="Foundation Support">
+                            <div class="plan-section-header">
+                                <h3 class="plan-section-title">Foundation Support</h3>
+                                <p class="plan-section-subtitle">A daily multi to cover core micronutrient needs.</p>
+                            </div>
+                            <div class="recommendations-grid recommendations-grid--single" id="foundation-grid"></div>
+                        </section>
+
+                        <section id="main-section" class="plan-section" aria-label="Main Recommendations">
+                            <div class="plan-section-header">
+                                <h3 class="plan-section-title">Your 3 Key Recommendations</h3>
+                                <p class="plan-section-subtitle">Selected specifically for your goal and profile.</p>
+                            </div>
+                            <div class="recommendations-grid" id="main-recommendations-grid"></div>
+                        </section>
+
+                        <section id="wellness-section" class="plan-section" aria-label="Daily Wellness Support">
+                            <div class="plan-section-header">
+                                <h3 class="plan-section-title">Daily Wellness Support</h3>
+                                <p class="plan-section-subtitle">Daily support for gut and overall wellness.</p>
+                            </div>
+                            <div class="recommendations-grid recommendations-grid--single" id="wellness-grid"></div>
+                        </section>
+
+                        <div class="plan-footer">
+                            <button id="restart-assessment" class="restart-btn">Retake Assessment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="verify-modal" class="verify-modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-icon">Mail</div>
+            <h2>Verify your email to receive all bonuses</h2>
+            <p class="modal-subtitle">We've sent a confirmation link to your email. Please check your inbox and spam folder to unlock your custom supplement protocol and exclusive wellness bonuses.</p>
+
+            <div class="modal-actions">
+                <button id="check-protocol-btn" class="modal-primary-btn">
+                    Check my custom supplement protocol
+                </button>
+                <button id="close-modal-btn" class="modal-secondary-btn">
+                    I'll check later
+                </button>
+            </div>
+
+            <div class="modal-timer">
+                <span id="modal-timer-text">Auto-redirecting in <strong>10</strong> seconds...</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-logo">Procenko Nutrition</p>
+            <p class="footer-disclaimer">Disclaimer: These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Recommendations are for informational purposes only.</p>
+            <p class="footer-copy">&copy; 2026 Procenko Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/products.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
